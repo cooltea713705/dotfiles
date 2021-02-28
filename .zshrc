@@ -43,8 +43,12 @@ export MAVEN_OPTS="-Xmx1024m -Xms512m" # system-wide (maven files are for projec
 # Need to be put at the end of .zshrc
 source ${0:h}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ${0:h}/.p10k.zsh ]] || source ${0:h}/.p10k.zsh
+# p10k configuration
+if [[ -f ~/.p10k.zsh ]] {
+  source ~/.p10k.zsh
+} elif [[ -f ${0:h}/.p10k.zsh ]] {
+  source ${0:h}/.p10k.zsh
+}
 
 # Path to your oh-my-zsh installation.
 export ZSH="${0:h}/ohmyzsh"
