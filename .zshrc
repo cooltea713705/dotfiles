@@ -24,6 +24,10 @@ fi
 # Aliases
 alias vi=$EDITOR
 
+# brew install source-highlight
+export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
+export LESS=' -R '
+
 # jenv
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
@@ -35,15 +39,12 @@ alias jenv_set_java_home='export JAVA_HOME="$HOME/.jenv/versions/`jenv version-n
 # Maven config
 export MAVEN_OPTS="-Xmx1024m -Xms512m" # system-wide (maven files are for project-level http://maven.apache.org/configure.html)
 
-# iTerm2 Shell Integration
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 # brew install zsh-syntax-highlighting
 # Need to be put at the end of .zshrc
 source ${0:h}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source .p10k.zsh
+[[ ! -f ${0:h}/.p10k.zsh ]] || source ${0:h}/.p10k.zsh
 
 # Path to your oh-my-zsh installation.
 export ZSH="${0:h}/ohmyzsh"
@@ -51,8 +52,6 @@ export ZSH="${0:h}/ohmyzsh"
 source $ZSH/oh-my-zsh.sh
 
 source ${0:h}/powerlevel10k/powerlevel10k.zsh-theme
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # https://gist.github.com/magicdude4eva/2d4748f8ef3e6bf7b1591964c201c1ab
 ### Fix slowness of pastes with zsh-syntax-highlighting.zsh
@@ -67,6 +66,9 @@ pastefinish() {
 zstyle :bracketed-paste-magic paste-init pasteinit
 zstyle :bracketed-paste-magic paste-finish pastefinish
 ### Fix slowness of pastes
+
+# iTerm2 Shell Integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # Profile zsh start-up
 # zprof
