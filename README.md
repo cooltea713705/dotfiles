@@ -7,8 +7,8 @@
 
 brew install iterm2 zsh git neovim hugo maven jenv rectangle vscodium intellij-idea-ce asimov source-highlight zsh-autosuggestions zsh-syntax-highlight
 
-git clone https://github.com/cooltea713705/dotfiles.git
+git clone --recurse-submodules https://github.com/cooltea713705/dotfiles.git .dotfiles
 
-echo "source ~/dotfiles/.zshrc" >> .zshrc
+echo "source ~/.dotfiles/.zshrc" >> .zshrc
 
 ```
