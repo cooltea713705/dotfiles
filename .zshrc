@@ -39,7 +39,6 @@ alias jenv_set_java_home='export JAVA_HOME="$HOME/.jenv/versions/`jenv version-n
 # Maven config
 export MAVEN_OPTS="-Xmx1024m -Xms512m" # system-wide (maven files are for project-level http://maven.apache.org/configure.html)
 
-
 # p10k configuration
 if [[ -f ~/.p10k.zsh ]] {
   source ~/.p10k.zsh
