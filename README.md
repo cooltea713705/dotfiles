@@ -34,3 +34,10 @@ echo -e "\nsource ~/.dotfiles/.zshrc" >> ~/.zshrc
 ```
 
 **Note:** might need to tweak paths to `zsh-autosuggestions` and `zsh-syntax-highlighting` depending on where `brew` has installed them
+
+# Extra
+
+## iTerm2
+
+* Preferences > Appearance > General > Exclude from Dock... + ... but only if all windows are hotkey windows
+* Import profiles, set 'Opening from Dock' as default and remove previous default
