@@ -39,5 +39,6 @@ echo -e "\nsource ~/.dotfiles/.zshrc" >> ~/.zshrc
 
 ## iTerm2
 
-* Preferences > Appearance > General > Exclude from Dock... + ... but only if all windows are hotkey windows
-* Import profiles, set 'Opening from Dock' as default and remove previous default
+* Preferences > General > Preferences > Load preferences from a custom folder: ~/.dotfiles  
+* (if not already done) Preferences > Appearance > General > Exclude from Dock... + ... but only if all windows are hotkey windows
+* (if not already done) Import profiles, set 'Opening from Dock' as default and remove previous default
