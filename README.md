@@ -2,6 +2,8 @@
 
 # Pre-requisites
 
+* If not already done: [generate git ssh key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
 * [Install MesloLGS font](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)
 
 * Run the following commands:
@@ -19,6 +21,9 @@ brew install iterm2 zsh git neovim maven jenv rectangle vscodium asimov source-h
 
 # Start asimov
 sudo brew services start asimov
+
+# Plug brew git onto key chain
+git config --global credential.helper osxkeychain
 ``` 
 
 # Set-up
