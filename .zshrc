@@ -26,7 +26,7 @@ alias vi=$EDITOR
 
 # brew install source-highlight
 export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
-export LESS=' -R '
+export LESS=' -R'
 
 # jenv
 export PATH="$HOME/.jenv/bin:$PATH"
