@@ -26,6 +26,8 @@ sudo brew services start asimov
 git config --global credential.helper osxkeychain
 ``` 
 
+* Configure git author
+
 # Set-up
 ```zsh
 git clone --recurse-submodules git@github.com:cooltea713705/dotfiles.git ~/.dotfiles
