@@ -25,7 +25,7 @@ fi
 alias vi=$EDITOR
 
 # brew install source-highlight
-export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
+export LESSOPEN="| src-hilite-lesspipe.sh %s"
 export LESS=' -R'
 
 # jenv
