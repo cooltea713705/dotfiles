@@ -16,28 +16,29 @@
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/$USER/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Install stuffs
-brew install iterm2 zsh git neovim maven jenv rectangle asimov source-highlight zsh-autosuggestions zsh-syntax-highlighting
+# Set up git
+brew install git
+
+# Plug brew git onto key chain
+git config --global credential.helper osxkeychain
+
+# Clone dotfiles
+git clone --recurse-submodules git@github.com:cooltea713705/dotfiles.git ~/.dotfiles
+
+# Install stuffs, not using Brewfile because installing some of these
+brew bundle --file=~/.dotfiles
 
 # Start asimov
 sudo brew services start asimov
 
-# Plug brew git onto key chain
-git config --global credential.helper osxkeychain
 ``` 
 
 * Configure git author
 
-# Set-up
+# Complete Set-up
 ```zsh
-git clone --recurse-submodules git@github.com:cooltea713705/dotfiles.git ~/.dotfiles
-
 echo -e "\nsource ~/.dotfiles/.zshrc" >> ~/.zshrc
 ```
-
-**Note:** might need to tweak paths to `zsh-autosuggestions` and `zsh-syntax-highlighting` depending on where `brew` has installed them
-
-# Extra
 
 ## iTerm2
 
