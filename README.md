@@ -25,7 +25,7 @@ git config --global credential.helper osxkeychain
 # Clone dotfiles
 git clone --recurse-submodules git@github.com:cooltea713705/dotfiles.git ~/.dotfiles
 
-# Install stuffs, not using Brewfile because installing some of these
+# Install stuffs
 brew bundle --file=~/.dotfiles
 
 # Start asimov
