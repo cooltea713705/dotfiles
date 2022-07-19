@@ -16,9 +16,6 @@
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/$USER/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# brew autoupdate
-brew autoupdate start
-
 # Set up git
 brew install git
 
