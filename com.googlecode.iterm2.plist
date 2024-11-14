@@ -14,6 +14,8 @@
 	<true/>
 	<key>DisableFullscreenTransparency</key>
 	<true/>
+	<key>DisableWindowSizeSnap</key>
+	<false/>
 	<key>DoubleClickPerformsSmartSelection</key>
 	<true/>
 	<key>EnableProxyIcon</key>
@@ -2721,6 +2723,8 @@
 	<false/>
 	<key>PMPrintingExpandedStateForPrint2</key>
 	<false/>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>4</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -2763,7 +2767,7 @@
 	<key>SeparateStatusBarsPerPane</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>SmartPlacement</key>
 	<true/>
 	<key>SoundForEsc</key>
@@ -2780,6 +2784,8 @@
 	</array>
 	<key>UIElementRequiresHotkeys</key>
 	<true/>
+	<key>UpdateScreenParamsDelay</key>
+	<real>3</real>
 	<key>UseBorder</key>
 	<false/>
 	<key>UseMetal</key>
